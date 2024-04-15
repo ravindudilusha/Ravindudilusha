@@ -1,0 +1,72 @@
+.worksection{
+    background-color: black;
+    padding-top: 100px;
+}
+
+.sectiontitle{
+    color: #495057;
+    font-size: 60px;
+    margin:0;
+}
+.workdescriptiontitle1,
+.workdescriptiontitle3,
+.workdescriptiontitle{
+    font-size: 25px;
+    padding-top: 20px;
+    line-height: normal;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.workdescriptiontitle{
+    color: #FFC500;
+}
+.workdescriptiontitle1{
+    color: #E32040;
+}
+.workdescriptiontitle3{
+    color: #FF7F7E;
+}
+
+.workdate{
+    font-size: 15px;
+    color: #ADB5BD;
+
+}
+
+.workdescription{
+    color: #F8F9FA;
+}
+.visitcontainer{
+    color: #FFC500;
+
+}
+
+.visitcontainer2{
+    color: #E32040;
+}
+.visitcontainer3{
+    color: #FF7F7E;
+}
+
+.visitcontainer,.visitcontainer2,.visitcontainer3{
+    display: flex;
+    align-items: center;
+}
+.viewtext{
+    margin: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.arrowicon{
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.arrowicon:hover{
+    transform: translateX(0);
+}
+
+.arrowicon:active{
+    transform: scale(0.9);
+}

@@ -1,0 +1,29 @@
+.Aboutsection{
+    background-color: black;
+    padding-top: 100px;
+}
+
+.sectiontitle{
+    color: #495057;
+    font-size: 60px;
+    margin:0;
+}
+
+.abouttext{
+    font-size: 20px;
+    color: #ADB5BD;
+}
+
+.sectioncontainer{
+    display: flex;
+    gap: 30px;
+}
+
+.aboutimg{
+    height: 500px;
+    padding: 10px;
+}
+
+.textcolor{
+    color: #F8F9FA;
+}

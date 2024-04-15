@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
+.text-wrapper{
+  width: 99dvw;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+
+}
+
+h1{
+  padding: 0 1.5rem;
+  white-space: nowrap;
+  animation: move-rtl 4000ms linear infinite;
+}
+
+@keyframes move-rtl {
+
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+  
+}
