@@ -82,6 +82,9 @@ function Work() {
             </div>
           </div>
         </div>
+        <div className="buttoncontainer">
+        <button type="button" class="seemorebtn btn btn-light">See more</button>
+        </div>
       </div>
     </div>
   );

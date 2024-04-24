@@ -70,3 +70,16 @@
 .arrowicon:active{
     transform: scale(0.9);
 }
+
+.buttoncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seemorebtn{
+    margin-top: 1%;
+    padding: 10px !important;
+    width: 140px;
+
+}

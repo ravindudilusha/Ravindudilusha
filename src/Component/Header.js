@@ -6,7 +6,7 @@ import "../Styles/Header.css";
 
 function Header() {
   return (
-    <div className='container' style={{marginTop:"-620px"}}>
+    <div className='container' style={{marginTop:"-40%"}}>
       <Navbar expand="lg" className='p-3'>
       <LinkContainer to="/">
         <Navbar.Brand >

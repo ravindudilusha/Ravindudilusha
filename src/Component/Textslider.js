@@ -11,6 +11,7 @@ function TextSlider() {
         <h1 key={index}>{text}</h1>
       ))}
     </div>
+    
   );
 }
 
