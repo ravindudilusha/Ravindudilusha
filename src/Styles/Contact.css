@@ -1,0 +1,31 @@
+.Contactsection{
+    background-color: black;
+    padding-top: 100px;
+}
+
+.Sectiontitle{
+    color: #495057;
+    font-size: 60px;
+    margin:0;
+}
+.form-group label,
+.form-group input,
+.form-group textarea {
+  color: rgb(255, 255, 255);
+}
+
+.formlabel{
+    margin-top: 20px;
+}
+
+.form-control{
+    background-color: #495057 !important;
+    color: white !important;
+    border: none !important; 
+    height: 40px !important;
+}
+
+.textareaform{
+    height: 100px !important;
+
+}

@@ -13,7 +13,13 @@ function Work() {
         <p className="sectiontitle p-3">Work</p>
         <div className="row workcontent p-3">
           <div className="col-6">
-            <img src={workimg1} className="img-fluid" />
+          <div className="image-container">
+          <img src={workimg1} className="img-fluid work-image" alt="Work Image" />
+          <div className="image-overlay">
+            <p className="viewtext">View on Behance</p>
+            <FaArrowRight className="arrowicon" />
+          </div>
+        </div>
           </div>
           <div className="col-6 workdescription">
             <p className="workdescriptiontitle">
@@ -38,7 +44,13 @@ function Work() {
         </div>
         <div className="row workcontent p-3">
           <div className="col-6">
-            <img src={workimg2} className="img-fluid" />
+          <div className="image-container">
+          <img src={workimg2} className="img-fluid work-image" alt="Work Image" />
+          <div className="image-overlay">
+            <p className="viewtext">View on Behance</p>
+            <FaArrowRight className="arrowicon" />
+          </div>
+        </div>
           </div>
           <div className="col-6 workdescription">
             <p className="workdescriptiontitle1">
@@ -62,7 +74,13 @@ function Work() {
         </div>
         <div className="row workcontent p-3">
           <div className="col-6">
-            <img src={workimg3} className="img-fluid" />
+          <div className="image-container">
+          <img src={workimg3} className="img-fluid work-image" alt="Work Image" />
+          <div className="image-overlay">
+            <p className="viewtext">View on Github</p>
+            <FaArrowRight className="arrowicon" />
+          </div>
+        </div>
           </div>
           <div className="col-6 workdescription">
             <p className="workdescriptiontitle3">
@@ -83,7 +101,7 @@ function Work() {
           </div>
         </div>
         <div className="buttoncontainer">
-        <button type="button" class="seemorebtn btn btn-light">See more</button>
+        <button type="button" class="Seemorebutton">See more</button>
         </div>
       </div>
     </div>

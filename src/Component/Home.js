@@ -5,6 +5,7 @@ import TextSlider from './Textslider';
 import DP from '../Assests/DP.svg';
 import About from './About';
 import Work from './Work';
+import Contact from './Contact';
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
       </div>
       <About />
       <Work/>
+      <Contact/>
     </>
   );
 }
