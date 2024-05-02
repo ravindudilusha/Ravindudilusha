@@ -3,7 +3,7 @@
 }
 
 .text-wrapper{
-  width: 99dvw;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   overflow-x: hidden;
