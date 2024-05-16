@@ -1,25 +1,43 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../Assests/logo.svg';
-import "../Styles/Header.css";
+import '../Styles/Header.css';
 
 function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='container' style={{marginTop:"-40%"}}>
-      <Navbar expand="lg" className='p-3'>
+    <Navbar
+      expand="lg"
+      fixed="top"
+      className={scrolled ? 'solid-bg' : 'transparent-bg'}
+      style={{ paddingLeft: '170px', paddingRight: '170px', paddingTop: '30px',paddingBottom:"30px" }}
+    >
       <LinkContainer to="/">
-        <Navbar.Brand >
-          <img
-            src={logo}
-            height="20"
-            className="logo"
-            alt="Logo"
-          />
+        <Navbar.Brand>
+          <img src={logo} height="20" className="logo" alt="Logo" />
         </Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className='navlink justify-content-end'>
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="ml-auto">
           <LinkContainer to="/">
             <Nav.Link className="text-white">Home</Nav.Link>
@@ -36,8 +54,7 @@ function Header() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    </div>
-  )
+  );
 }
 
 export default Header;
