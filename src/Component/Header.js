@@ -28,7 +28,7 @@ function Header() {
       expand="lg"
       fixed="top"
       className={scrolled ? 'solid-bg' : 'transparent-bg'}
-      style={{ paddingLeft: '170px', paddingRight: '170px', paddingTop: '30px', paddingBottom: '30px' }}
+      style={{ paddingLeft: '10%', paddingRight: '10%', paddingTop: '20px', paddingBottom: '20px' }}
     >
       <a href="#home" className="navbar-brand">
         <img src={logo} height="20" className="logo" alt="Logo" />
