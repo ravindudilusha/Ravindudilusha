@@ -1,21 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../Styles/Contact.css";
+import { FaPhone } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [textareaValue, setTextareaValue] = useState("");
+  const form = useRef();
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const handlenameChange = (event) => {
-    setName(event.target.value);
-  };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleTextareaChange = (event) => {
-    setTextareaValue(event.target.value);
+    emailjs
+      .sendForm('service_tz7011p', 'template_yytjnrs', form.current, {
+        publicKey: 'rb-tkNIR9qlpcWK_s',
+      })
+      .then(
+        () => {
+          setSuccessMessage("Your message has been sent successfully!");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
   };
 
   return (
@@ -24,7 +32,7 @@ function Contact() {
         <p className="Sectiontitle p-3">Contact</p>
         <div className="row p-4">
           <div className="col-6">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <label className="formlabel" htmlFor="nameinput">
                   Name
@@ -33,8 +41,7 @@ function Contact() {
                   type="text"
                   className="form-control"
                   id="nameinput"
-                  value={name}
-                  onChange={handlenameChange}
+                  name="user_name"
                 />
               </div>
 
@@ -47,8 +54,7 @@ function Contact() {
                   className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="name@example.com"
-                  value={email}
-                  onChange={handleEmailChange}
+                  name="user_email"
                 />
               </div>
 
@@ -63,13 +69,54 @@ function Contact() {
                   className="form-control textareaform"
                   id="exampleFormControlTextarea1"
                   rows="3"
-                  value={textareaValue}
-                  onChange={handleTextareaChange}
+                  name="user_message"
                 ></textarea>
               </div>
-              <button className="Submitbutton">Submit</button>
+              <button className="Submitbutton">Send Message</button>
+              {successMessage && (
+                <p className="success-message">{successMessage}</p>
+              )}
             </form>
           </div>
+
+          <div className="col-6">
+            <div className="contactinfo">
+              <div className="phonecontainer">
+                <div className="phoneiconcontainer">
+                  <div className="circle">
+                    <FaPhone className="phone-icon" />
+                  </div>
+                </div>
+                <div className="phonecontent">
+                  <p className="phonenumberword">Phone number</p>
+                  <a href="tel:+94771100242" className="phonenumber">+94 77 110 0242</a>
+                </div>
+              </div>
+              <div className="phonecontainer">
+                <div className="phoneiconcontainer">
+                  <div className="circle">
+                    <FaWhatsapp className="Whatsapp-icon" />
+                  </div>
+                </div>
+                <div className="phonecontent">
+                  <p className="phonenumberword">Whatsapp</p>
+                  <a href="https://wa.me/+94771100242" className="phonenumber">+94 77 110 0242</a>
+                </div>
+              </div>
+              <div className="emailcontainer">
+                <div className="emailiconcontainer">
+                  <div className="circle">
+                    <MdOutlineMailOutline className="Mail-icon" />
+                  </div>
+                </div>
+                <div className="phonecontent">
+                  <p className="phonenumberword">Email</p>
+                  <a href="mailto:ravindudilusha31@gmail.com" className="phonenumber">ravindudilusha31@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

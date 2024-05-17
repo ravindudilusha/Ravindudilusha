@@ -3,7 +3,7 @@ import '../Styles/TextSlider.css';
 
 function TextSlider() {
   const text = 'Ravindu Dilusha';
-  const count = 5;
+  const count = 6;
 
   return (
     <div className="text-wrapper">

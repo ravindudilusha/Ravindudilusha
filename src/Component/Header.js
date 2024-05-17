@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../Assests/logo.svg';
 import '../Styles/Header.css';
 
@@ -29,28 +28,18 @@ function Header() {
       expand="lg"
       fixed="top"
       className={scrolled ? 'solid-bg' : 'transparent-bg'}
-      style={{ paddingLeft: '170px', paddingRight: '170px', paddingTop: '30px',paddingBottom:"30px" }}
+      style={{ paddingLeft: '170px', paddingRight: '170px', paddingTop: '30px', paddingBottom: '30px' }}
     >
-      <LinkContainer to="/">
-        <Navbar.Brand>
-          <img src={logo} height="20" className="logo" alt="Logo" />
-        </Navbar.Brand>
-      </LinkContainer>
+      <a href="#home" className="navbar-brand">
+        <img src={logo} height="20" className="logo" alt="Logo" />
+      </a>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="ml-auto">
-          <LinkContainer to="/">
-            <Nav.Link className="text-white">Home</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/about">
-            <Nav.Link className="text-white">About</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/work">
-            <Nav.Link className="text-white">Work</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/contact">
-            <Nav.Link className="text-white">Contact</Nav.Link>
-          </LinkContainer>
+          <a href="#home" className="nav-link text-white">Home</a>
+          <a href="#about" className="nav-link text-white">About</a>
+          <a href="#work" className="nav-link text-white">Work</a>
+          <a href="#contact" className="nav-link text-white">Contact</a>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -29,3 +29,58 @@
     height: 100px !important;
 
 }
+
+.Submitbutton{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    color: rgb(0, 0, 0); /* Default text color */
+    background-color: white; /* Default background */
+    margin-top: 20px;
+}
+
+.contactinfo{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.phonecontainer,.emailcontainer {
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    gap: 10px
+  }
+
+  .phonenumberword{
+    margin: 0;
+    color: white;
+  }
+  
+  
+  /* Additional styling for icons if needed */
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phonenumber{
+    text-decoration: none;
+    color:white
+  }
+
+  .phone-icon,.Whatsapp-icon,.Mail-icon{
+    font-size: 24px;
+  }
+  
+  .success-message {
+    color: rgb(8, 204, 8);
+    margin-top: 10px;
+  }
