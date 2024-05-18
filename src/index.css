@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 60px; /* Adjust based on your navbar height */
+}

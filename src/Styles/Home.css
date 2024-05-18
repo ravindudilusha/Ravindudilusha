@@ -163,5 +163,27 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .dpimage{
+    width: 300px;
+    top: 10px;
+    left: 0;
+  right: 14px;
+  margin: auto;
+  height: auto;
+  }
+  .imagecontainer {
+    display: flex;
+    justify-content: center;
+  }
   
+
+  .textcontainer{
+    width: 100%;
+    top: calc(10px + 300px / 2); 
+  }
+
+.UIUXtext{
+  font-size: 14px;
+}
+
 }

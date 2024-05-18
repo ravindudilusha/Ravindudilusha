@@ -12,6 +12,7 @@
 .abouttext{
     font-size: 20px;
     color: #ADB5BD;
+    margin: 0;
 }
 
 .sectioncontainer{
@@ -27,3 +28,28 @@
 .textcolor{
     color: #F8F9FA;
 }
+.resumebtn {
+    padding: 10px;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    color: rgb(0, 0, 0); /* Default text color */
+    background-color: white; /* Default background */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+
+  .resumebtn .icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.resumebtn:hover .icon {
+    transform: translateX(5px);
+}
+  
+  

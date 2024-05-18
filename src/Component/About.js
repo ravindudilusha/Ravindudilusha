@@ -1,6 +1,8 @@
 import React from "react";
 import "../Styles/About.css";
 import aboutimg from "../Assests/aboutsectionimg.svg";
+import { FaArrowRight } from "react-icons/fa6";
+
 
 function About() {
   return (
@@ -21,6 +23,12 @@ function About() {
           user-friendly solutions. Let's create something extraordinary
           together! 🚀🖥️
         </p>
+        <div className="container resumebtncontainer">
+        <button className="resumebtn">
+            View resume
+            <FaArrowRight className="icon" />
+        </button>
+        </div>
         </div>
         <img src={aboutimg} className="aboutimg"/>
       </div>
