@@ -19,6 +19,8 @@ function Contact() {
       .then(
         () => {
           setSuccessMessage("Your message has been sent successfully!");
+          form.current.reset();
+
         },
         (error) => {
           console.log('FAILED...', error.text);

@@ -10,7 +10,7 @@ function About() {
     <div className="container">
       <div className="sectioncontainer">
         <div className="abouttexcontainer">
-        <p className="sectiontitle p-3">About</p>
+        <p className="sectiontitle p-3 pt-0">About</p>
         <p className="p-3 abouttext">
           👋 Hello, I'm <span className="textcolor">Ravindu Dilusha, </span>a self-motivated and creative
           individual with a strong passion for<span className="textcolor"> UI/UX and frontend development.</span>
