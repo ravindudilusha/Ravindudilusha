@@ -12,7 +12,7 @@ function Work() {
       <div className="container">
         <p className="sectiontitle p-3">Work</p>
         <div className="row workcontent p-3">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
           <div className="image-container">
           <img src={workimg1} className="img-fluid work-image" alt="Work Image" />
           <div className="image-overlay">
@@ -21,7 +21,7 @@ function Work() {
           </div>
         </div>
           </div>
-          <div className="col-6 workdescription">
+          <div className="col-12 col-md-6 workdescription">
             <p className="workdescriptiontitle">
               Sri Lanka Revealed-Crafting the Lanka Journey Mobile App UX/UI for
               Seamless Exploration
@@ -43,7 +43,7 @@ function Work() {
           </div>
         </div>
         <div className="row workcontent p-3">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
           <div className="image-container">
           <img src={workimg2} className="img-fluid work-image" alt="Work Image" />
           <div className="image-overlay">
@@ -52,7 +52,7 @@ function Work() {
           </div>
         </div>
           </div>
-          <div className="col-6 workdescription">
+          <div className="col-12 col-md-6 workdescription">
             <p className="workdescriptiontitle1">
               RushGrub-A Case Study in Designing a Convenient Food Pickup App
             </p>
@@ -73,7 +73,7 @@ function Work() {
           </div>
         </div>
         <div className="row workcontent p-3">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
           <div className="image-container">
           <img src={workimg3} className="img-fluid work-image" alt="Work Image" />
           <div className="image-overlay">
@@ -82,7 +82,7 @@ function Work() {
           </div>
         </div>
           </div>
-          <div className="col-6 workdescription">
+          <div className="col-12 col-md-6 workdescription">
             <p className="workdescriptiontitle3">
               Building a Responsive Restaurant Landing Page with React, CSS &
               Bootstrap
