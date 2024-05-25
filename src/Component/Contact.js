@@ -31,7 +31,7 @@ function Contact() {
     <div className="Contactsection">
       <div className="container">
         <p className="Sectiontitle p-3">Contact</p>
-        <div className="row p-4">
+        <div className="row p-4 pt-0">
           <div className="col-12 col-md-6">
             <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">

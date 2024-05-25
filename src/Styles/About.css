@@ -1,37 +1,38 @@
-.Aboutsection{
+* {
+    font-family: "Comfortaa", sans-serif;
+  }
+  
+  .Aboutsection {
     background-color: black;
     padding-top: 100px;
-}
-
-.sectiontitle{
+  }
+  
+  .sectiontitle {
     color: #495057;
     font-size: 60px;
-    margin:0;
-}
-
-.abouttext{
+    margin: 0;
+  }
+  
+  .abouttext {
     font-size: 20px;
     color: #ADB5BD;
     margin: 0;
-}
-
-/* .sectioncontainer{
-    display: flex;
-    gap: 30px;
-} */
-
-.aboutimg{
+  }
+  
+  .aboutimg {
     height: 500px;
     padding: 10px;
-}
-
-.textcolor{
+  }
+  
+  .textcolor {
     color: #F8F9FA;
-}
-.resumebtncontainer{
+  }
+  
+  .resumebtncontainer {
     padding-left: 1rem;
-}
-.resumebtn {
+  }
+  
+  .resumebtn {
     padding: 10px;
     cursor: pointer;
     width: 160px;
@@ -45,20 +46,61 @@
     align-items: center;
     transition: color 0.3s ease;
   }
-
+  
   .resumebtn .icon {
     margin-left: 10px;
     transition: transform 0.3s ease;
-}
-
-.resumebtn:hover .icon {
+  }
+  
+  .resumebtn:hover .icon {
     transform: translateX(5px);
-}
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .aboutimg {
+      margin-top: 20px;
+      height: 400px;
+      display: flex;
+    }
 
-@media only screen and (max-width: 576px) {
-.aboutimg{
-    margin-top: 20px;
-    height: 440px;
-    display: flex;
-}
-}
+    .imgcontainer{
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .abouttext {
+      font-size: 15px;
+    }
+  
+    .sectiontitle {
+      font-size: 30px;
+    }
+  
+    .Aboutsection {
+      background-color: black;
+      padding-top: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .aboutimg {
+      margin-top: 20px;
+      height: 450px;
+      display: flex;
+      text-align: center;
+    }
+  
+    .abouttext {
+      font-size: 15px;
+    }
+  
+    .sectiontitle {
+      font-size: 25px;
+    }
+  
+    .Aboutsection {
+      background-color: black;
+      padding-top: 30px;
+    }
+  } 
+  

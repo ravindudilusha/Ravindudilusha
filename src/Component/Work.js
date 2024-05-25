@@ -12,16 +12,20 @@ function Work() {
       <div className="container">
         <p className="sectiontitle p-3">Work</p>
         <div className="row workcontent p-3">
-          <div className="col-12 col-md-6">
-          <div className="image-container">
-          <img src={workimg1} className="img-fluid work-image" alt="Work Image" />
-          <div className="image-overlay">
-            <p className="viewtext">View on Behance</p>
-            <FaArrowRight className="arrowicon" />
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6">
+            <div className="image-container">
+              <img
+                src={workimg1}
+                className="img-fluid work-image"
+                alt="Work Image"
+              />
+              <div className="image-overlay">
+                <p className="viewtext">View on Behance</p>
+                <FaArrowRight className="arrowicon" />
+              </div>
+            </div>
           </div>
-        </div>
-          </div>
-          <div className="col-12 col-md-6 workdescription">
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6 workdescription">
             <p className="workdescriptiontitle">
               Sri Lanka Revealed-Crafting the Lanka Journey Mobile App UX/UI for
               Seamless Exploration
@@ -37,22 +41,33 @@ function Work() {
               effortlessly, and make the most of your journey.
             </p>
             <div className="visitcontainer">
-              <p className="viewtext">View on Behance</p>
-              <FaArrowRight className="arrowicon" />
+              <a
+                href="https://www.behance.net/gallery/187525931/LANKA-JOURNEY-Trip-Planning-App-UIUX-Case-Study"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-link"
+              >
+                <p className="viewtext">View on Behance</p>
+                <FaArrowRight className="arrowicon" />
+              </a>
             </div>
           </div>
         </div>
         <div className="row workcontent p-3">
-          <div className="col-12 col-md-6">
-          <div className="image-container">
-          <img src={workimg2} className="img-fluid work-image" alt="Work Image" />
-          <div className="image-overlay">
-            <p className="viewtext">View on Behance</p>
-            <FaArrowRight className="arrowicon" />
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6">
+            <div className="image-container">
+              <img
+                src={workimg2}
+                className="img-fluid work-image"
+                alt="Work Image"
+              />
+              <div className="image-overlay">
+                <p className="viewtext">View on Behance</p>
+                <FaArrowRight className="arrowicon" />
+              </div>
+            </div>
           </div>
-        </div>
-          </div>
-          <div className="col-12 col-md-6 workdescription">
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6 workdescription">
             <p className="workdescriptiontitle1">
               RushGrub-A Case Study in Designing a Convenient Food Pickup App
             </p>
@@ -66,42 +81,62 @@ function Work() {
               hassle-free pickup, RushGrub has you covered. Enjoy delicious
               meals without the wait, only with RushGrub.
             </p>
-            <div className="visitcontainer2">
-              <p className="viewtext">View on Behance</p>
-              <FaArrowRight className="arrowicon" />
+            <div className="visitcontainer">
+              <a
+                href="https://www.behance.net/gallery/199024491/RushGrub-Case-Study-in-Seamless-Food-Pickup-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-link"
+              >
+                <p className="viewtext">View on Behance</p>
+                <FaArrowRight className="arrowicon" />
+              </a>
             </div>
           </div>
         </div>
         <div className="row workcontent p-3">
-          <div className="col-12 col-md-6">
-          <div className="image-container">
-          <img src={workimg3} className="img-fluid work-image" alt="Work Image" />
-          <div className="image-overlay">
-            <p className="viewtext">View on Github</p>
-            <FaArrowRight className="arrowicon" />
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6">
+            <div className="image-container">
+              <img
+                src={workimg3}
+                className="img-fluid work-image"
+                alt="Work Image"
+              />
+              <div className="image-overlay">
+                <p className="viewtext">View on Github</p>
+                <FaArrowRight className="arrowicon" />
+              </div>
+            </div>
           </div>
-        </div>
-          </div>
-          <div className="col-12 col-md-6 workdescription">
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6 workdescription">
             <p className="workdescriptiontitle3">
               Building a Responsive Restaurant Landing Page with React, CSS &
               Bootstrap
             </p>
             <p className="workdate">2022 November</p>
             <p className="workdescription">
-            My first web dev project!. This landing page invites you to discover PizzaDay, a new online
-              pizza ordering platform. Built with modern web technologies like
-              React.js, CSS, and Bootstrap, the website offers a sleek and
-              user-friendly experience.
+              My first web dev project!. This landing page invites you to
+              discover PizzaDay, a new online pizza ordering platform. Built
+              with modern web technologies like React.js, CSS, and Bootstrap,
+              the website offers a sleek and user-friendly experience.
             </p>
-            <div className="visitcontainer3">
-              <p className="viewtext">View on Github</p>
-              <FaArrowRight className="arrowicon" />
+            <div className="visitcontainer">
+              <a
+                href="https://github.com/Ravidudilusha/Restaurent-frontend-Web-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-link"
+              >
+                <p className="viewtext">View on Github</p>
+                <FaArrowRight className="arrowicon" />
+              </a>
             </div>
           </div>
         </div>
         <div className="buttoncontainer">
-        <button type="button" class="Seemorebutton">See more</button>
+          <button type="button" class="Seemorebutton">
+            See more
+          </button>
         </div>
       </div>
     </div>

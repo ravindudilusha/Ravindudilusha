@@ -31,9 +31,6 @@
   padding-right: 10% !important;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
-}
-
-.navbar-custom {
   position: absolute !important;
   top: 0;
   left: 0;
@@ -41,6 +38,19 @@
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
+}
+
+.solid-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.sticky {
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-toggler {
