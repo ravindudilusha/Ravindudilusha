@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/TextSlider.css';
 
 function TextSlider() {
-  const text = 'Ravindu Dilusha';
+  const text = 'UI/UX Engineer & Frontend Developer';
   const count = 6;
 
   return (

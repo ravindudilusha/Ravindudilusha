@@ -99,27 +99,42 @@
 @media only screen and (max-width: 576px) {
     .footerlogo {
         padding-left: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        display: block;
-        margin: 0 auto; /* Center the logo */
+        text-align: center;
     }
 
     .footercontent {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
-        text-align: center; /* Center align text */
+        padding: 20px;
+    }
+
+    .availability-text {
+        padding-right: 0;
     }
 
     .sociallinks {
-        flex-direction: column; /* Stack social links vertically */
+        flex-direction: column;
         gap: 10px;
-        font-size: 14px;
     }
 
     .availability-container {
         margin-top: 20px;
-        padding-right: 0;
+    }
+    .footersection{
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .footercontent {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .footerlogo {
+        padding-left: 0;
     }
 
     .availability-text {

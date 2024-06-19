@@ -3,7 +3,7 @@ import "../Styles/Contact.css";
 import { FaPhone } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
@@ -13,8 +13,8 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_tz7011p', 'template_yytjnrs', form.current, {
-        publicKey: 'rb-tkNIR9qlpcWK_s',
+      .sendForm("service_tz7011p", "template_yytjnrs", form.current, {
+        publicKey: "rb-tkNIR9qlpcWK_s",
       })
       .then(
         () => {
@@ -22,7 +22,7 @@ function Contact() {
           form.current.reset(); // Reset form fields
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.log("FAILED...", error.text);
         }
       );
   };
@@ -31,7 +31,7 @@ function Contact() {
     <div className="Contactsection">
       <div className="container">
         <p className="Sectiontitle p-3">Contact</p>
-        <div className="row p-4">
+        <div className="row p-4 pt-0">
           <div className="col-12 col-md-6">
             <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
@@ -84,40 +84,58 @@ function Contact() {
             <div className="contactinfo">
               <div className="phonecontainer">
                 <div className="phoneiconcontainer">
-                  <div className="circle">
-                    <FaPhone className="phone-icon" />
-                  </div>
+                  <a href="tel:+94771100242" className="phoneiconlink">
+                    <div className="circle">
+                      <FaPhone className="phone-icon" />
+                    </div>
+                  </a>
                 </div>
                 <div className="phonecontent">
                   <p className="phonenumberword">Phone number</p>
-                  <a href="tel:+94771100242" className="phonenumber">+94 77 110 0242</a>
+                  <a href="tel:+94771100242" className="phonenumber">
+                    +94 77 110 0242
+                  </a>
                 </div>
               </div>
+
               <div className="phonecontainer">
                 <div className="phoneiconcontainer">
-                  <div className="circle">
-                    <FaWhatsapp className="Whatsapp-icon" />
-                  </div>
+                  <a href="https://wa.me/+94771100242"  className="phoneiconlink">
+                    <div className="circle">
+                      <FaWhatsapp className="Whatsapp-icon" />
+                    </div>
+                  </a>
                 </div>
                 <div className="phonecontent">
                   <p className="phonenumberword">Whatsapp</p>
-                  <a href="https://wa.me/+94771100242" className="phonenumber">+94 77 110 0242</a>
+                  <a href="https://wa.me/+94771100242" className="phonenumber">
+                    +94 77 110 0242
+                  </a>
                 </div>
               </div>
               <div className="emailcontainer">
                 <div className="emailiconcontainer">
-                  <div className="circle">
-                    <MdOutlineMailOutline className="Mail-icon" />
-                  </div>
+                  <a
+                    href="mailto:ravindudilusha31@gmail.com"
+                    className="phoneiconlink"
+                  >
+                    <div className="circle">
+                      <MdOutlineMailOutline className="Mail-icon" />
+                    </div>
+                  </a>
                 </div>
                 <div className="phonecontent">
                   <p className="phonenumberword">Email</p>
-                  <a href="mailto:ravindudilusha31@gmail.com" className="phonenumber">ravindudilusha31@gmail.com</a>
+                  <a
+                    href="mailto:ravindudilusha31@gmail.com"
+                    className="phonenumber"
+                  >
+                    ravindudilusha31@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -1,25 +1,36 @@
-*{
+* {
   font-family: "Comfortaa", sans-serif;
+  box-sizing: border-box;
+  
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
+#home {
+  position: relative;
+  width: 100%;
+}
 
 .body {
   justify-content: center;
-  background-color: black; /* Changed background color to black */
+  background-color: black;
   margin: 0;
   padding: 0;
   height: 100vh;
-  max-width: 100%;
+  max-width: 100vw; /* Use vw (viewport width) instead of % */
   display: flex;
   align-items: center;
-  overflow-x: hidden;
-
+  box-sizing: border-box;
 }
 
 .textcontainer {
   position: absolute;
-  top: calc(90px + 400px / 2); /* Adjust this calculation based on your image height */
+  top: calc(90px + 50vh / 2); /* Adjust this calculation based on your image height */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10000;
@@ -33,9 +44,6 @@
   margin-bottom: 0;
 }
 
-
-
-
 .absolute {
   position: absolute;
   top: 50%;
@@ -44,14 +52,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 99%;
-  
+  width: 100%;
 }
 
 .justify-center {
   justify-content: right;
-  top: -400px;
-  left: 100px;
+  top: -600px;
+  left: -700px;
 }
 
 .bg-shape1,
@@ -66,9 +73,8 @@
   animation-iteration-count: infinite;
   opacity: 0.5;
   filter: blur(90px);
-  animation-timing-function: linear; /* Added linear timing function */
+  animation-timing-function: linear;
 }
-
 
 @keyframes move-circular-one {
   0% { transform: rotate(0deg) translateX(-20%) translateY(-20%); }
@@ -100,42 +106,39 @@
   border-radius: 50%;
   background-color: rgb(226, 43, 165);
   animation-name: move-circular-one;
-  animation-duration: 10s; /* Adjust animation duration */
-  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
-  animation-timing-function: linear; /* Optional: Use linear timing function */
+  animation-duration: 10s;
 }
 
 .bg-shape2 {
- 
   height: 100vh;
   border-radius: 50%;
   background-color: rgb(255, 32, 32);
   animation-name: move-circular-two;
-  animation-duration: 12s; /* Adjust animation duration */
-  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
-  animation-timing-function: linear; /* Optional: Use linear timing function */
+  animation-duration: 12s;
 }
 
 .bg-shape3 {
-  
   height: 100vh;
   border-radius: 50%;
   background-color: rgb(222, 114, 19);
   animation-name: move-circular-three;
-  animation-duration: 14s; /* Adjust animation duration */
-  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
-  animation-timing-function: linear; /* Optional: Use linear timing function */
+  animation-duration: 14s;
 }
 
 .bg-shape4 {
-  
   height: 100vh;
   border-radius: 50%;
   background-color: rgb(19, 114, 222);
   animation-name: move-circular-four;
-  animation-duration: 16s; /* Adjust animation duration */
-  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
-  animation-timing-function: linear; /* Optional: Use linear timing function */
+  animation-duration: 16s;
+}
+
+.bg-shape5 {
+  height: 100vh;
+  border-radius: 50%;
+  background-color: rgb(222, 207, 19);
+  animation-name: move-circular-five;
+  animation-duration: 18s;
 }
 
 .dpimage {
@@ -151,39 +154,108 @@
   justify-content: center;
 }
 
-.bg-shape5 {
-  
-  height: 100vh;
-  border-radius: 50%;
-  background-color: rgb(222, 207, 19);
-  animation-name: move-circular-five;
-  animation-duration: 18s; /* Adjust animation duration */
-  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
-  animation-timing-function: linear; /* Optional: Use linear timing function */
-}
-
 @media only screen and (max-width: 576px) {
-  .dpimage{
-    width: 300px;
+  .dpimage {
+    max-width: 300px;
     top: 10px;
-    left: 0;
-  right: 14px;
-  margin: auto;
-  height: auto;
   }
-  .imagecontainer {
-    display: flex;
-    justify-content: center;
-  }
-  
 
-  .textcontainer{
+  .textcontainer {
     width: 100%;
-    top: calc(10px + 300px / 2); 
+    top: calc(10px + 300px / 2);
   }
 
-.UIUXtext{
-  font-size: 14px;
+  .UIUXtext {
+    font-size: 14px;
+  }
+
+  .bg-shape1,
+  .bg-shape2,
+  .bg-shape3,
+  .bg-shape4,
+  .bg-shape5 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bg-shape1,
+  .bg-shape2,
+  .bg-shape3,
+  .bg-shape4,
+  .bg-shape5 {
+    filter: blur(45px);
+  }
+
+  .justify-center {
+    top: -250px;
+    left: -150px;
+  }
 }
 
+/* For iPad Air */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .dpimage {
+    max-width: 400px; /* Adjust as needed */
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .textcontainer {
+    width: 80%;
+    top: calc(10px + 400px / 2); /* Adjust based on image height */
+  }
+
+  .UIUXtext {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  .bg-shape1,
+  .bg-shape2,
+  .bg-shape3,
+  .bg-shape4,
+  .bg-shape5 {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    filter: blur(60px); /* Adjust as needed */
+  }
+
+  .justify-center {
+    top: -400px; /* Adjust as needed */
+    left: -300px; /* Adjust as needed */
+  }
+}
+
+/* For iPad Pro */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  .dpimage {
+    width: 600px; /* Adjust as needed */
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .textcontainer {
+    width: 70%;
+    top: calc(10px + 600px / 2); /* Adjust based on image height */
+  }
+
+  .UIUXtext {
+    font-size: 18px; /* Adjust as needed */
+  }
+
+  .bg-shape1,
+  .bg-shape2,
+  .bg-shape3,
+  .bg-shape4,
+  .bg-shape5 {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    filter: blur(70px); /* Adjust as needed */
+  }
+
+  .justify-center {
+    top: -700px; /* Adjust as needed */
+    left: -400px; /* Adjust as needed */
+  }
 }

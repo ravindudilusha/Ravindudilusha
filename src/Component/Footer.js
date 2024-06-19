@@ -13,12 +13,13 @@ function Footer() {
           <img src={logo} className="footerlogo" />
         </div>
         <div className="sociallinks">
-          <a href="www.linkedin.com/in/ravindu-dilusha" className="socialnames">
+          <a href="https://www.linkedin.com/in/ravindu-dilusha/"   target="_blank" className="socialnames">
             Linkedin
           </a>
           <a
             href="https://www.behance.net/ravidudilusha1"
             className="socialnames"
+            target="_blank"
           >
             Behance
           </a>

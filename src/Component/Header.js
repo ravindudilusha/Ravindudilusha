@@ -5,14 +5,17 @@ import "../Styles/Header.css"; // Import your CSS file here
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
       if (offset > 100) {
         setScrolled(true);
+        setSticky(true);
       } else {
         setScrolled(false);
+        setSticky(false);
       }
     };
 
@@ -27,7 +30,7 @@ function Header() {
     <Navbar
       expand="lg"
       fixed="top"
-      className={`navbar-custom ${scrolled ? "solid-bg" : "transparent-bg"}`}
+      className={`navbar-custom ${scrolled ? "solid-bg" : "transparent-bg"} ${sticky ? "sticky" : ""}`}
     >
       <a href="#home" className="navbar-brand">
         <img src={logo} height="20" className="logo" alt="Logo" />
