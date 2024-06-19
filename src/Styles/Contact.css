@@ -3,6 +3,11 @@
     padding-top: 100px;
 }
 
+.phoneiconlink{
+  text-decoration: none;
+  color: black;
+}
+
 .Sectiontitle{
     color: #495057;
     font-size: 60px;

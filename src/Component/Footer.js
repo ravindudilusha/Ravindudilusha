@@ -13,7 +13,7 @@ function Footer() {
           <img src={logo} className="footerlogo" />
         </div>
         <div className="sociallinks">
-          <a href="www.linkedin.com/in/ravindu-dilusha" className="socialnames">
+          <a href="https://www.linkedin.com/in/ravindu-dilusha/" className="socialnames">
             Linkedin
           </a>
           <a

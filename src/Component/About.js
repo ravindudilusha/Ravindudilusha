@@ -32,7 +32,7 @@ function About() {
             </p>
             <div className="resumebtncontainer">
               <a
-                href="https://drive.google.com/file/d/1cf-pzcBsdRFnysX4M1PhmO5nSQvGVkh7/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/17jrTplUWrIXAgDuASnWv6G3qS9RTm8fW?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resumelink"
