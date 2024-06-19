@@ -15,10 +15,10 @@
     margin: 0;
 }
 
-.sectioncontainer{
+/* .sectioncontainer{
     display: flex;
     gap: 30px;
-}
+} */
 
 .aboutimg{
     height: 500px;
@@ -27,6 +27,9 @@
 
 .textcolor{
     color: #F8F9FA;
+}
+.resumebtncontainer{
+    padding-left: 1rem;
 }
 .resumebtn {
     padding: 10px;
@@ -51,5 +54,11 @@
 .resumebtn:hover .icon {
     transform: translateX(5px);
 }
-  
-  
+
+@media only screen and (max-width: 576px) {
+.aboutimg{
+    margin-top: 20px;
+    height: 440px;
+    display: flex;
+}
+}

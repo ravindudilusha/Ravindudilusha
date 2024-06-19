@@ -19,8 +19,7 @@ function Contact() {
       .then(
         () => {
           setSuccessMessage("Your message has been sent successfully!");
-          form.current.reset();
-
+          form.current.reset(); // Reset form fields
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -33,7 +32,7 @@ function Contact() {
       <div className="container">
         <p className="Sectiontitle p-3">Contact</p>
         <div className="row p-4">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <label className="formlabel" htmlFor="nameinput">
@@ -81,7 +80,7 @@ function Contact() {
             </form>
           </div>
 
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="contactinfo">
               <div className="phonecontainer">
                 <div className="phoneiconcontainer">

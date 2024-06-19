@@ -96,3 +96,33 @@
     margin: 0;
 }
 
+@media only screen and (max-width: 576px) {
+    .footerlogo {
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+        margin: 0 auto; /* Center the logo */
+    }
+
+    .footercontent {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center; /* Center align text */
+    }
+
+    .sociallinks {
+        flex-direction: column; /* Stack social links vertically */
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .availability-container {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .availability-text {
+        padding-right: 0;
+    }
+}

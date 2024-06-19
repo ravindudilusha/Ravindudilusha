@@ -84,3 +84,29 @@
     color: rgb(8, 204, 8);
     margin-top: 10px;
   }
+
+  @media only screen and (max-width: 576px) {
+    .contactinfo{
+      margin: 0;
+      padding-top: 10px;
+  }
+
+  .circle{
+    height: 40px;
+    width: 40px;
+  }
+  .phone-icon,.Whatsapp-icon,.Mail-icon{
+    font-size: 18px;
+  }
+  .phonecontainer,.emailcontainer {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    gap: 10px
+  }
+
+  .phonenumberword, .phonenumber{
+    font-size: 14px;
+  }
+  }

@@ -1,144 +1,172 @@
-.worksection{
-    background-color: black;
-    padding-top: 100px;
+.worksection {
+  background-color: black;
+  padding-top: 100px;
 }
 
-.sectiontitle{
-    color: #495057;
-    font-size: 60px;
-    margin:0;
+.sectiontitle {
+  color: #495057;
+  font-size: 60px;
+  margin: 0;
 }
 .workdescriptiontitle1,
 .workdescriptiontitle3,
-.workdescriptiontitle{
-    font-size: 25px;
-    padding-top: 20px;
-    line-height: normal;
-    margin-bottom: 5px;
-    font-weight: 500;
+.workdescriptiontitle {
+  font-size: 25px;
+  padding-top: 20px;
+  line-height: normal;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
-.workdescriptiontitle{
-    color: #FFC500;
+.workdescriptiontitle {
+  color: #ffc500;
 }
-.workdescriptiontitle1{
-    color: #E32040;
+.workdescriptiontitle1 {
+  color: #e32040;
 }
-.workdescriptiontitle3{
-    color: #FF7F7E;
-}
-
-.workdate{
-    font-size: 15px;
-    color: #ADB5BD;
-
+.workdescriptiontitle3 {
+  color: #ff7f7e;
 }
 
-.workdescription{
-    color: #F8F9FA;
-}
-.visitcontainer{
-    color: #FFC500;
-
+.workdate {
+  font-size: 15px;
+  color: #adb5bd;
 }
 
-.visitcontainer2{
-    color: #E32040;
+.workdescription {
+  color: #f8f9fa;
+  font-size: 20px;
 }
-.visitcontainer3{
-    color: #FF7F7E;
-}
-
-.visitcontainer,.visitcontainer2,.visitcontainer3{
-    display: flex;
-    align-items: center;
-}
-.viewtext{
-    margin: 0;
-    margin-right: 10px;
-    cursor: pointer;
+.visitcontainer {
+  color: #ffc500;
 }
 
-.arrowicon{
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
+.visitcontainer2 {
+  color: #e32040;
+}
+.visitcontainer3 {
+  color: #ff7f7e;
 }
 
-.arrowicon:hover{
-    transform: translateX(0);
+.visitcontainer,
+.visitcontainer2,
+.visitcontainer3 {
+  display: flex;
+  align-items: center;
+}
+.viewtext {
+  margin: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
 }
 
-.arrowicon:active{
-    transform: scale(0.9);
+.arrowicon {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
 }
 
-.buttoncontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.arrowicon:hover {
+  transform: translateX(0);
+}
+
+.arrowicon:active {
+  transform: scale(0.9);
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Seemorebutton {
-    padding: 10px;
-    width: 140px;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
-    color: rgb(0, 0, 0); /* Default text color */
-    background-color: white; /* Default background */
-  }
-  
-  .Seemorebutton:hover {
-    color: white; /* Text color on hover */
-    border-color: white; /* Border color on hover */
-    background-color: transparent; /* Background on hover (optional, since it's already transparent) */
-    transform: scale(1.05); /* Scale effect on hover */
-  }
-  
-  .image-container {
-    width: 100%; /* Ensure the container takes the full width of its parent */
-    height: auto; /* Let the height adjust based on the image */
-    overflow: hidden;
-  }
-  
-  .work-image {
-    transition: transform 0.3s ease-in-out;
-    width: 100%; /* Ensure the image takes the full width of its container */
-    height: auto; /* Let the height adjust based on the aspect ratio */
-  }
-  
-  .image-container:hover .work-image {
-    transform: scale(1.1);
-  }
-  .image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .image-overlay:hover {
-    opacity: 1;
-  }
-  
-  .viewtext {
-    color: white;
+  padding: 10px;
+  width: 140px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease,
+    border-color 0.3s ease;
+  color: rgb(0, 0, 0); /* Default text color */
+  background-color: white; /* Default background */
+  font-size: 16px;
+}
+
+.Seemorebutton:hover {
+  color: white; /* Text color on hover */
+  border-color: white; /* Border color on hover */
+  background-color: transparent; /* Background on hover (optional, since it's already transparent) */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.image-container {
+  width: 100%; /* Ensure the container takes the full width of its parent */
+  height: auto; /* Let the height adjust based on the image */
+  overflow: hidden;
+}
+
+.work-image {
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto; /* Let the height adjust based on the aspect ratio */
+}
+
+.image-container:hover .work-image {
+  transform: scale(1.1);
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+
+.arrowicon {
+  color: white;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 576px) {
+  .workdescriptiontitle1,
+  .workdescriptiontitle3,
+  .workdescriptiontitle {
     font-size: 18px;
+    padding-top: 15px;
+    line-height: normal;
+    margin-bottom: 5px;
+    font-weight: 500;
   }
-  
-  .arrowicon {
-    color: white;
-    font-size: 24px;
-  }
+  .workdate{
+    font-size: 14px;
+}
+.workdescription{
+  font-size: 13px;
+}
+.viewtext {
+  font-size: 12px;
+}
+
+.Seemorebutton{
+  width: 100px;
+  font-size: 14px;
+}
+
+}
