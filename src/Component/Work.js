@@ -32,7 +32,7 @@ function Work() {
             </div>
           </div>
           <div className="col-12 col-md-12 col-lg-12 col-xl-6 workdescription">
-            <p className="pt-0 workdescriptiontitle">
+            <p className="pt-md-2 workdescriptiontitle">
               Sri Lanka Revealed-Crafting the Lanka Journey Mobile App UX/UI for
               Seamless Exploration
             </p>
@@ -80,7 +80,7 @@ function Work() {
             </div>
           </div>
           <div className="col-12 col-md-12 col-lg-12 col-xl-6 workdescription">
-            <p className="pt-0 workdescriptiontitle1">
+            <p className="pt-md-2 workdescriptiontitle1">
               RushGrub-A Case Study in Designing a Convenient Food Pickup App
             </p>
             <p className="workdate">2024 March</p>
@@ -127,7 +127,7 @@ function Work() {
             </div>
           </div>
           <div className="col-12 col-md-12 col-lg-12 col-xl-6 workdescription">
-            <p className="pt-0 workdescriptiontitle3">
+            <p className="pt-md-2 workdescriptiontitle3">
               Building a Responsive Restaurant Landing Page with React, CSS &
               Bootstrap
             </p>
