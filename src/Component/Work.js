@@ -69,7 +69,7 @@ function Work() {
               />
               <div className="image-overlay">
                 <a
-                  href="https://www.behance.net/gallery/199024491/RushGrub-Case-Study-in-Seamless-Food-Pickup-App"
+                  href="https://www.behance.net/gallery/204414901/RushGrub-Case-Study-in-Food-Pickup-App-Design"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -95,7 +95,7 @@ function Work() {
             </p>
             <div className="visitcontainer">
               <a
-                href="https://www.behance.net/gallery/199024491/RushGrub-Case-Study-in-Seamless-Food-Pickup-App"
+                href="https://www.behance.net/gallery/204414901/RushGrub-Case-Study-in-Food-Pickup-App-Design"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="view-link"
